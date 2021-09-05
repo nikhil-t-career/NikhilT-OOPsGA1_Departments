@@ -14,6 +14,7 @@ public class MainDriver {
 	
 	public static void main(String[] args) {
 				
+		//The Department classes must be Singleton and thus the getInstance method used to get the single instance.
 		AdminDepartment adminDept = AdminDepartment.getInstance();
 		System.out.println("Welcome to " + adminDept.departmentName() + "!!!");
 		System.out.println(adminDept.getTodaysWork());
